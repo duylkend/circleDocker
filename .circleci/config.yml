@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Build and push Docker image
           command: |
-            echo "Inside the Build and push Docker image step"
+            echo "Inside the Build and push Docker image step "
             docker --version # print the version for logging
             docker build -t "$DOCKER_USERNAME"/sample-express-app .        
             docker tag "$DOCKER_USERNAME"/sample-express-app "$DOCKER_USERNAME"/sample-express-app:1.0.0
